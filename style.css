@@ -1229,6 +1229,11 @@ footer .credits a {
   .contact .row form {
     padding-top: 0;
   }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
 /* Mobile Phone */
