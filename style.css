@@ -89,6 +89,68 @@ body {
   transition: all 0.3s ease;
 }
 
+/* Penyesuaian untuk Tombol Login/Logout & Sapaan */
+.navbar .navbar-extra {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Memberi sedikit jarak antar ikon */
+}
+
+#shopping-cart-button {
+  position: relative;
+}
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #ef4444;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.navbar .navbar-extra .user-greeting {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-right: 0.5rem;
+}
+
+.navbar .navbar-extra #login-button,
+.navbar .navbar-extra #logout-button {
+  padding: 0.5rem;
+}
+
+.navbar-extra .icon-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid #fff; /* Border abu-abu transparan */
+  border-radius: 50%; /* Membuatnya menjadi lingkaran sempurna */
+  color: #fff;
+  transition: all 0.3s ease; /* Animasi halus untuk semua perubahan */
+}
+
+.navbar-extra .icon-button:hover {
+  background-color: none; /* Warna latar menjadi hijau */
+  border-color: var(--primary); /* Warna border menjadi hijau */
+  transform: translateY(-2px); /* Sedikit terangkat ke atas */
+}
+
+.navbar-extra .icon-button:active {
+  background-color: var(--primary); /* Warna hijau lebih terang saat ditekan */
+  transform: scale(0.95); /* Sedikit mengecil untuk memberi kesan ditekan */
+  border-color: var(--primary);
+}
+
 .navbar .navbar-extra a:hover {
   color: var(--primary);
   transform: scale(1.1);
@@ -897,6 +959,12 @@ z
   animation: slideInUp 0.8s ease-out;
 }
 
+.product-link-wrapper {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .product-card::before {
   content: "";
   position: absolute;
@@ -1113,7 +1181,6 @@ footer {
   background-color: var(--primary);
   text-align: center;
   padding: 1rem 0 3rem;
-  margin-top: 3rem;
 }
 
 footer .socials {
